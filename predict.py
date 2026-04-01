@@ -15,7 +15,7 @@ async def predict(file: UploadFile = File(...)):
         # просто тест
         result = predict_image(contents)
 
-        return {"result": result}
+        return {"prediction": result}
 
     except Exception as e:
         return {"error": str(e)}
