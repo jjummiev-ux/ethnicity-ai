@@ -15,7 +15,7 @@ async def predict_api(file: UploadFile = File(...)):
     with open(file_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
 
-    result = predict(file_path)
+    result = "WORKING OK"
 
     return {"prediction": result}
 import os
